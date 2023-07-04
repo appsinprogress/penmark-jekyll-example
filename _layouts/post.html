@@ -13,6 +13,16 @@ layout: default
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
+      <script 
+        type="module" 
+        src="https://penmark.appsinprogress.com/dist/PostClient.js" 
+        postfilepath="{{ page.path }}"
+        draftsFolder="_drafts"
+        postsFolder="_posts"
+        imagesFolder="uploads"
+        githubUsername="penmark-cms"
+        githubRepoName="penmark-jekyll-example"  
+      ></script> 
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
